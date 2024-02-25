@@ -248,48 +248,49 @@
                         </div>
                         <div class="col p-4 bg-white">
                             <code>
-      <span class="text-muted">// Vertical padding relative to the viewport height</span><br>
-      <span class="text-dark">.py-vh-1 {</span><br>
-      <span class="ms-3">padding-top:
-        <span class="text-primary">1.5vh;</span></span><br>
-      <span class="ms-3">padding-bottom:
-        <span class="text-primary">1.5vh;</span></span><br>
+      <span class="text-muted">// Menjadi Lebih Baik</span><br>
+      <span class="text-dark">function shuffleWords(phrase) { {</span><br>
+      <span class="ms-3">const words = phrase.split(' ');
+        <span class="text-primary"></span></span><br>
+      <span class="ms-3">  for (let i = words.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [words[i], words[j]] = [words[j], words[i]];
+        <span class="text-primary"></span></span><br>
       <span class="text-secondary">}</span><br>
       <br>
-      <span class="text-dark">.py-vh-2 {</span><br>
-      <span class="ms-3">padding-top:
-        <span class="text-primary">3vh;</span></span><br>
-      <span class="ms-3">padding-bottom:
+      <span class="text-dark"> const shuffledPhrase = words.join(' ');</span><br>
+      <span class="ms-3">
+        <span class="text-primary"></span></span><br>
+      <span class="ms-3">   return shuffledPhrase;
         <span class="text-primary">3vh;</span></span><br>
       <span class="text-secondary">}</span>      <br>
       <br>
-      <span class="text-dark">.py-vh-3 {</span><br>
-      <span class="ms-3">padding-top:
-        <span class="text-primary">6vh;</span></span><br>
-      <span class="ms-3">padding-bottom:
-        <span class="text-primary">6vh;</span></span><br>
-      <span class="text-secondary">}</span>
+      <span class="text-dark">const originalPhrase = "Indonesia Maju Lebih Baik";</span><br>
+       <span class="text-dark">const shuffledPhrase = shuffleWords(originalPhrase);
+</span><br>
+          <span class="text-dark">const originalPhrase = "Indonesia Maju Lebih Baik";</span><br>
+               <span class="text-dark">const shuffledPhrase = shuffleWords(originalPhrase);</span><br>
     </code>
                         </div>
                     </div>
 
                 </div>
                 <div class="col-lg-5">
-                    <h4 class="my-2">Easy to understand, easy to maintain.</h4>
-                    <p class="text-muted">Lorem, ipsum dolor sit adipisicing elit. Minus culpa, voluptatibus ex itaque, sapiente a consequatur inventore beatae.</p>
-                    <a href="#" class="text-decoration-none link-primary">Learn more
-<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                    <h4 class="my-2">Frase Asli</h4>
+                    <p class="text-muted"> Indonesia Maju Lebih Baik</p>
+
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
 <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"></path>
 </svg>
-</a>
+                    </a>
                     <hr class="my-4">
-                    <h4 class="my-2">Build by developer for developers</h4>
-                    <p class="text-muted">Lorem, ipsum dolor sit adipisicing elit. Minus culpa, voluptatibus ex itaque, sapiente a consequatur inventore beatae.</p>
-                    <a href="#" class="text-decoration-none link-primary">Learn more
-<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                    <h4 class="my-2">Frase yang Diacak:</h4>
+                    <p class="text-muted">Baik Lebih Indonesia Maju<br>Lebih Indonesia Maju Baik</p>
+
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
 <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"></path>
 </svg>
-</a>
+                    </a>
                 </div>
 
 
